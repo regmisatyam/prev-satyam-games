@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SATYAM</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/contact-style.css">
+  <link rel="stylesheet" href="style-contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../script/script.js"></script>
+  <script src="/script/nav-controller.js"></script>
+
+</head>
+
+<body>
+
+  <div class="sidenav headBar" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+    <a  href="https://satyamregmi.com.np/SATYAM_GAMES/">HOME</a>
+    <a href="/Games/">GAMES</a>
+    <a href="/Apps/">APPS</a>
+    <a href="/about/">ABOUT</a>
+    <a href="/contact/">CONTACT US</a>
+    <a href="" target="_blank">BLOGS<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+      stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="inline ml-1 h-4 w-4">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+    </svg></a>
+  </div>
+
+
+    <div class="headBar">
+    <header class="body-font ">
+      <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-between">
+    
+        <a class="flex title-font font-medium items-center text-gray-900 md:mb-0 justify-between">
+          <span class="menuBtn mx-5" onclick="toggleNav()">☰</span>
+          <div class="flex items-center right-marginSatyam">
+          <img src="../images/lion-logo.png" alt="satyam_dev logo">
+          <span class="ml-3 text-xl font-family-app-title">SATYAM GAMES</span>
+        </div>
+        </a>
+        <div class="satyamNav items-center">
+        <nav class="md:ml-auto font-family-app-title flex flex-wrap items-center justify-center">
+          <a class="margin-left-right hover:text-gray-900" href="/">HOME</a>
+          <a class="margin-left-right hover:text-gray-900" href="/Games/">GAMES</a>
+          <a class="margin-left-right hover:text-gray-900" href="/Apps/">APPS</a>
+          <a class="margin-left-right hover:text-gray-900" href="/about/">ABOUT</a>
+          <a class="margin-left-right hover:text-gray-900" href="#Blogs">BLOGS<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="inline ml-1 h-4 w-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg></a>
+        </nav>
+      </div>
+      </div>
+    </header>
+  </div>
+
+  <hr>
+
+  <div class="containerNew">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Kathmandu, Nepal</div>
+          <div class="text-two">KTM 44600</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+977 9840112337</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">satyamregmi6+support@gmail.com</div>
+          <div class="text-two">info.satyamregmi@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any suggestions, feedback, or complaint about our products, please mention subjects feedback on
+          subject form to submit your request. We are ready to help you.</p>
+
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter subject">
+          </div>
+
+          <div class="input-box message-box">
+            <textarea placeholder="Enter your message"></textarea>
+          </div>
+
+          <div class="upload__box">
+            <div class="upload__btn-box">
+
+              <label class="upload__btn">
+                <p>Upload Screenshots</p>
+                <input type="file" accept=".jpg, .jpeg, .png" name="images[]" data-max_length="5"
+                  class="upload__inputfile" multiple>
+              </label> (jpeg, jpg, png only) * 6 max
+            </div>
+            <div class="upload__img-wrap"></div>
+          </div>
+          <div class="upload__img-wrap"></div>
+          <div class="upload__btn-box">
+            <input type="submit" name="upload" value="Send Now" class="upload__btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer class="bg-img body-font div-border-footer">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="/">
+      <img src="../images/lion-logo.png" class="footer-img" alt="satyam">
+      <span class="ml-3 text-xl" style="color: #fff;">© SATYAM GAMES</span>
+    </a>
+    <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Contact
+      —
+      <a href="https://twitter.com/Satyam6Regmi" class="ml-1" rel="noopener noreferrer"
+        target="_blank">@satyam</a>
+    </p>
+    <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+      <a href="/privacy-policy/" class="ml-1" rel="noopener noreferrer" target="_blank">PRIVACY
+        POLICY</a>
+    </p>
+    <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+      <a href="/terms/" class="ml-1" rel="noopener noreferrer" target="_blank">TERMS AND CONDITIONS</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="ml-3" href="https://facebook.com/regmi.satyam" target="_blank">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+          viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3" href="https://x.com/Satyam6Regmi" target="_blank">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+          viewBox="0 0 24 24">
+          <path
+            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+          </path>
+        </svg>
+      </a>
+      <a class="ml-3" href="https://instagram.com/regmisatyam" target="_blank">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3" href="https://linkedin.com/in/satyam-regmi/" target="_blank">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+          class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+          </path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+</html>
